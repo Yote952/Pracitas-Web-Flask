@@ -1,0 +1,22 @@
+body {
+    background-color:ghostwhite;
+}
+input{
+    font-size: medium;
+    color:black;
+    background-color:cornsilk;
+    padding: 5px;
+    border-radius: 5px;
+}
+.block{
+    display:block;
+}
+.name{
+    width: 31%;
+}
+.block input{
+    display: block;
+}
+#btnSubmit{
+    width: 15%;
+}

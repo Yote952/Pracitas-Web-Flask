@@ -1,0 +1,32 @@
+
+{% extends 'nav.html' %}
+<h1>{%block title%}
+    Registro
+    {%endblock%}</h1>
+{%block main%}
+<form action="{{url_for('registar')}}">
+    <!-- nombre apellidoP apellidoM Telefono Sexo Direccion -->
+    <input type="text" class="name" name="name" placeholder="Nombre">
+    <input type="text" class="name" name="lastname" placeholder="Apellido Parteno">
+    <input type="text" class="name" name="middlename" placeholder="Apellido Materno">
+    <br>
+    <input type="text" name="phone" placeholder="Telefono">
+    <div>
+        <label>Sexo:<br></label>
+        <input type="radio" id="gender1" name="gender" value="Hombre">
+        <label for="gender1">Hombre</label><br>
+        <input type="radio" id="gender2" name="gender" value="Mujer">
+        <label for="gender2">Mujer</label><br>
+    </div>
+    <div class="block">
+        <label>Direccion</label>
+        <input type="text" name="country" placeholder="Pais">
+        <input type="text" name="polity" placeholder="Estado">
+        <input type="text" name="city" placeholder="Ciudad">
+        <input type="text" name="street" placeholder="calle">
+        <input type="text" name="suburb" placeholder="Colonia">
+        <input type="number" name="postal" placeholder="Codigo Postal">
+    </div>
+    <input type="submit" id="btnSubmit" value="Enviar">
+</form>
+{%endblock%}

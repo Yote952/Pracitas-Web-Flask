@@ -1,0 +1,16 @@
+{%extends 'nav.html' %}
+{%block main%}
+    <div class="box login">
+        <form action="/login">
+            <input type="text" pattern="[a-zA-Z]" name="Email" placeholder="Correo" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <p><a href="/Recuperar">¿Olvidates tu Contraseña?</a></p>
+            <div>
+                <input type="submit" value="Login">
+                <a href="/register">
+                    <input type="button" value="Regristar">
+                </a>
+            </div>
+        </form>
+    </div>
+{%endblock%}
